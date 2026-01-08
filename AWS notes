@@ -1,0 +1,36 @@
+# AWS Notes
+
+# Day 1: First day of learning AWS and beginning to study for AWS Cloud Practitioner certification
+
+# Module 1: Introduction to the Cloud
+
+# What is cloud computing?
+  - Cloud computing is the on-demand delivery of IT resources over the internet with pay-as-you-go pricing
+
+# The 3 Deployment Types
+  - Cloud-based
+      - "Includes the flexibility to migrate exisisting resources to the cloud"
+  - On-Premises
+      - "Deploying resources on premises using virtualization and resource management tools does not provide many of the 
+         benefits of cloud computing. However, it is sometimes sought for its ability to provide dedicated resources and 
+         low latency"
+  - Hybrid
+      - "cloud-based resources and on-premises infrastructure work together. This approach is ideal for situations where              legacy applications must remain on premises due to maintenance preferences or regulatory requirements."
+
+# AWS Cloud Benefits
+  - Variable expense. Pay for what you use
+  - Dynamically scalable
+  - Increased speed and agility when deploying applications and services
+  - Don't have to maintain your own datacenters
+
+# AWS Datacenters are seperated by regions to ensure high availability and fault tolerance. Within these regions are smaller sub regions (there are a minimum of 3 of these within each region) called "availabilty zones" or AZs for short in order to ensure redundancy.
+
+# AWS has a shared security model which splits responsibility for certain things between the customer and AWS.
+  - Things that are the customer's responsibility include customer data or client-side data encryption (Security IN the cloud)
+  - Things the vary by service include server-side encryption, network traffic protection, platform and application management, along with OS, network and firewall configurations
+  - Things that are AWS's responsibility include software for computing,storage,databases,networking as well as the hardware and AWS global infrastructure (Security OF the cloud)
+
+# What did I learn?
+  - I learned about Cloud Computing, the AWS Shared Responsibility Model and Regions and Availability Zones and many benefits and use cases that businesses could stand to gain from implementing a variety of cloud services.
+
+# Module 2: Compute in the Cloud
