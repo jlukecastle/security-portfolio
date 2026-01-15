@@ -1,1 +1,87 @@
-a
+# AWS Notes
+
+# Day 1: First day of learning AWS and beginning to study for AWS Cloud Practitioner certification
+
+# Module 1: Introduction to the Cloud
+
+# What is cloud computing?
+  - Cloud computing is the on-demand delivery of IT resources over the internet with pay-as-you-go pricing
+
+# The 3 Deployment Types
+  - Cloud-based
+      - "Includes the flexibility to migrate exisisting resources to the cloud"
+  - On-Premises
+      - "Deploying resources on premises using virtualization and resource management tools does not provide many of the 
+         benefits of cloud computing. However, it is sometimes sought for its ability to provide dedicated resources and 
+         low latency"
+  - Hybrid
+      - "cloud-based resources and on-premises infrastructure work together. This approach is ideal for situations where              legacy applications must remain on premises due to maintenance preferences or regulatory requirements."
+
+# AWS Cloud Benefits
+  - Variable expense. Pay for what you use
+  - Dynamically scalable
+  - Increased speed and agility when deploying applications and services
+  - Don't have to maintain your own datacenters
+
+# AWS Datacenters are seperated by regions to ensure high availability and fault tolerance. Within these regions are smaller sub regions (there are a minimum of 3 of these within each region) called "availabilty zones" or AZs for short in order to ensure redundancy.
+
+# AWS has a shared security model which splits responsibility for certain things between the customer and AWS.
+  - Things that are the customer's responsibility include customer data or client-side data encryption (Security IN the cloud)
+  - Things the vary by service include server-side encryption, network traffic protection, platform and application management, along with OS, network and firewall configurations
+  - Things that are AWS's responsibility include software for computing,storage,databases,networking as well as the hardware and AWS global infrastructure (Security OF the cloud)
+
+# What did I learn?
+  - I learned about Cloud Computing, the AWS Shared Responsibility Model and Regions and Availability Zones and many benefits and use cases that businesses could stand to gain from implementing a variety of cloud services.
+
+# Module 2: Compute in the Cloud
+
+# What does "compute" refer to?
+  - Compute refers to the processing power needed to run applications, manage data, and perform calculations
+
+# What is EC2?
+  - Amazon Elastic Compute Cloud (Amazon EC2) is a powerful compute service from AWS
+
+# Benefits and Features of EC2
+  - Pay for what you use
+  - Amazon handles the hardware and datacenters
+  - Highly flexible and resizeable. Can start and stop EC2 instances at your request
+  - EC2 instances are VMs
+  - Multi-tenancy is when an underlying physical host machine shares many different instances of VMs
+  - Hypervisors help make sure the tenants have resource availability while keeping instances seperate
+  - You can choose your OS and software and applications that are installed
+  - Vertically scaling an instance is when you provision the same VM more resources such as RAM or CPU (cores)
+  - You control the networking aspect of EC2. So, you decide what type of requests make it to your server 
+    and if they are publicly or privately accessible
+  - EC2 is compute as a service
+  - Launching Amazon Machine Image (AMI) is how you define the OS and additional software to install. You also choose an
+    instance type and allocate underlying hardware resources
+  - You can connect to instances with SSH and RDP or AWS Systems Manager
+
+# AWS EC2 Instance Types
+  - General Purpose: provide a balanced mix of compute, memory, and networking resources. 
+    They are ideal for diverse workloads, like web services, code repositories
+  - Compute Optimized: Compute optimized instances are ideal for compute-intensive tasks, 
+    such as gaming servers, high performance computing (HPC), machine learning, and scientific modeling.
+  - Memory Optimized: Memory optimized instances are used for memory-intensive tasks like processing large datasets, 
+    data analytics, and databases.
+  - Accelerated Computing: Accelerated computing instances use hardware accelerators, like graphics processing units (GPUs), 
+    to efficiently handle tasks, such as floating-point calculations, graphics processing, and machine learning.
+  - Storage Optimized: Storage optimized instances are designed for workloads that require high performance for locally 
+    stored data, such as large databases, data warehousing, and I/O-intensive applications.
+
+# How AWS uses APIs
+  - Everything in AWS uses APIs! (Application programing interface)
+  - These APIs give you predetermined ways to interact with AWS services and they are used to configure, manage, and
+    provision your resources
+  - APIs can be called via the AWS Management Console, the AWS Command Line Interface (CLI), or the AWS Software Development
+    Kit (SDK)
+
+# AWS Management Console
+  - Good for a browser based interface that helps complete tasks such as:
+    - Setting up test environments
+    - Viewing billing info
+    - View monitoring information
+    - Work with non-technical resources
+
+# AWS CLI
+  -
