@@ -13,3 +13,28 @@ The AWS root account was secured using the following controls:
 The root account is reserved strictly for **break-glass scenarios**, such as account recovery or critical billing actions. All day-to-day administrative and operational access is performed using IAM users and assumed roles.
 
 This approach minimizes standing privilege, reduces the blast radius of credential compromise, and aligns with AWS security best practices.
+
+---
+
+## Phase 1: Identity Design
+
+### IAM Users
+
+Created IAM users to represent human access:
+
+- No long-lived access keys
+- Console access only
+- MFA enforced on login
+
+This reduces the risk of credential leakage and supports identity auditing.
+
+### IAM Groups
+
+Permissions were assigned using IAM groups rather than directly to users:
+
+- **Admins** – administrative users
+- **Developers** – non-administrative users
+
+This approach improves scalability and simplifies permission management.
+
+---
