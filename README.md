@@ -18,3 +18,4 @@
 ## Certifications
   - CompTIA Net+
   - CompTIA Sec+
+  - AWS Certified Cloud Practitioner ***(In Progress)***
