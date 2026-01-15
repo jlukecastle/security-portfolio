@@ -38,3 +38,27 @@ Permissions were assigned using IAM groups rather than directly to users:
 This approach improves scalability and simplifies permission management.
 
 ---
+
+## Phase 3: Role-Based Access Control
+
+### Administrative Role
+
+An administrative IAM role was created with the following characteristics:
+
+- Full administrative permissions
+- MFA required to assume the role **FINISHED**
+- Temporary credentials via STS ***Left Off Here***
+
+Admin users must explicitly assume this role to perform privileged actions.
+
+### Service Roles
+
+IAM roles were also created for AWS services (e.g., EC2):
+
+- Permissions granted via role attachment
+- No hardcoded credentials
+- Automatic credential rotation handled by AWS
+
+This aligns with AWS best practices for service authentication.
+
+---
