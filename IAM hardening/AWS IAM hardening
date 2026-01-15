@@ -8,7 +8,7 @@ The AWS root account was secured using the following controls:
 
 - **Multi-Factor Authentication (MFA)** was enabled on the root account to prevent unauthorized access using only a password.
 - **All root access keys were removed**, ensuring the root account cannot be used programmatically.
-- Root credentials were stored securely in a password manager and are not used for daily operations.
+- Root credentials were stored securely offline and are not used for daily operations.
 
 The root account is reserved strictly for **break-glass scenarios**, such as account recovery or critical billing actions. All day-to-day administrative and operational access is performed using IAM users and assumed roles.
 
